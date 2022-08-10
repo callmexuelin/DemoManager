@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>文件上传</title>
+    <link rel="stylesheet"  href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  
+    <div class="box">
+        <p>yolo目标检测</p>
+        <form action="" method="post" enctype="multipart/form-data">
+            <input class="input" type="file" name="file" >
+            <input id="yoloButton" type="submit" value="上传" >
+        </form>
+        <img src="{{ url_for('static', filename= './images/test.jpg',_t=val1)  }}" width="400" height="400" alt="你的图片被外星人劫持了～～"/>
+    </div>
+
+    <div class="box">
+        <p>ASR语言识别</p>
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="file"/>
+            <input  id="ASRButton" type="submit" value="上传"/>
+        </form>
+        
+
+        <div id="speechTranscriptContainer">
+            <p id="speechText">{{ transcript }}</p>
+        </div>
+
+
+    </div>
+<!--     
+    <h1>使用Flask上传本地图片并显示示例一</h1>
+    <form action="" enctype='multipart/form-data' method='POST'>
+        <input type="file" name="file" style="margin-top:20px;"/>
+        <br>
+        <i>请输入你当前的心情（开心、超开心、超超开心）：</i>
+        <input type="text" class="txt_input" name="name"  value="超超开心" style="margin-top:10px;"/>
+        <input type="submit" value="上传" class="button-new" style="margin-top:15px;"/>
+    </form>
+    <h1>阁下的心情是：{{userinput}}！</h1>
+    <img src="{{ url_for('static', filename= './images/test.jpg',_t=val1)  }}" width="400" height="400" alt="你的图片被外星人劫持了～～"/> -->
+</body>
+</html>

@@ -1,0 +1,43 @@
+.box{
+    border: 1px solid #c2c2c2;
+    float: left;
+    box-sizing: border-box;
+    height: 180px;
+    width: 25%;
+    background:#e7e5e5
+}
+
+.input{
+    display:block;
+    width: 250px;
+    height: 30px;
+}
+
+#yoloButton{
+    background-color: #2066C5;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#ASRButton {
+    background-color: #2066C5;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#speechTranscriptContainer {
+    margin-top: 20px;
+}
+
+#speechText {
+    font-size: 18px;
+    width: 500px;
+}
