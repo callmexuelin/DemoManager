@@ -1,5 +1,7 @@
 from flask import Flask,request,render_template
 import argparse
+import setproctitle
+
 
 def parse_opt():
     #创建解析对象
@@ -12,6 +14,7 @@ def parse_opt():
 
 
 app = Flask(__name__)
+setproctitle.setproctitle("demo manger")
 
 @app.route("/", methods=["POST", "GET"])
 def index():
